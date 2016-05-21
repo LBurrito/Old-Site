@@ -1,0 +1,68 @@
+body {
+    background-image: url("droplets.jpg");
+	background-position: right top;
+    background-attachment: fixed;
+	background-size: cover;
+	font-family: "Trebuchet MS" ;
+
+	}
+#content {
+	background-color: white;
+	margin-left: 8%;
+	margin-right: 10%;
+	background-size: cover;
+	padding-bottom: 70%;
+}
+h1{
+	text-align: leftwards;
+	color: #060606 ;
+	font-size: 90px;
+	margin-left: 0px;
+	background-image: url("Untitled-1.jpg");
+	margin-bottom: 0px;
+	top: 0px;
+	left: 200px;
+	border-top: 0px;
+	border-style: double;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom-color: #5AED75
+	} 
+h2{
+	color: #BAC0C2;
+	background-size: cover;
+	background-color: #333;
+}	
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+
+li a:hover {
+	background: orange;
+}
+.rcorners {
+    border-radius: 5px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+}
+p {
+	font-size: 20px;
+	background-size: cover;
+	background-color: #333;
+	padding: 3px;
+}
