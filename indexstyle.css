@@ -53,7 +53,8 @@ li {
 }
 
 li a:hover {
-	background: orange;
+	background: green;
+	border-radius: 2px;
 }
 .rcorners {
     border-radius: 2px;
