@@ -1,5 +1,15 @@
 <DOCTYPE HTML>
 <script type="text/javascript" src="processing.js"></script>
+ <style>
+.chart div {
+  font: 10px sans-serif;
+  background-color: steelblue;
+  text-align: right;
+  padding: 3px;
+  margin: 1px;
+  color: white;
+}
+</style>
 <head>
 <title>Burrito</title>
 <link rel="stylesheet" href="indexstyle.css">
@@ -18,5 +28,26 @@
   <img src="doggo.jpg" alt="doggo" style="width:400px;height:400px;" class="rcorners">
   </a>
   <canvas data-processing-sources="ballz.pde" style="width:400px;height:400px;"></canvas>
+
+<div class="chart"></div>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script>
+
+var data = [100, 500, 1000, 1100, 1110];
+
+var x = d3.scale.linear()
+    .domain([0, d3.max(data)])
+    .range([0, 420]);
+
+d3.select(".chart")
+  .selectAll("div")
+    .data(data)
+  .enter().append("div")
+    .style("width", function(d) { return x(d) + "px"; })
+    .text(function(d) { return d; });
+
+</script>
+
 </body>
 </html>
+
